@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import { ArrowRight, ChevronDown } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 function Hero() {
+  const navigate = useNavigate();
   return (
     <section className="pt-20 pb-32 bg-gradient-to-br from-gray-50 to-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -25,13 +27,15 @@ function Hero() {
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
                   className="bg-green-600 text-white px-6 py-3 rounded-md font-medium hover:bg-green-700 transition duration-150 ease-in-out flex items-center"
+                  onClick={() => navigate("/dashboard")}
                 >
-                  Get Demo Access
+                  Preview App
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </motion.button>
                 <motion.button
                   whileHover={{ scale: 1.05 }}
                   whileTap={{ scale: 0.95 }}
+                  onClick={() => navigate("/about")}
                   className="text-green-600 border border-green-600 px-6 py-3 rounded-md font-medium hover:bg-green-50 transition duration-150 ease-in-out"
                 >
                   Learn More

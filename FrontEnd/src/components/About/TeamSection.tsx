@@ -7,24 +7,24 @@ import {
 function TeamSection() {
     const teamMembers = [
       {
-        name: "Alex Johnson",
-        role: "AI Engineer",
-        bio: "Specializes in machine learning models for energy prediction and optimization.",
-      },
-      {
-        name: "Priya Sharma",
+        name: "Tejas Raman",
         role: "Frontend Developer",
-        bio: "Expert in React and modern UI/UX design principles for intuitive interfaces.",
+        bio: "Something frontend",
       },
       {
-        name: "Marcus Chen",
-        role: "Data Scientist",
-        bio: "Focused on transforming complex energy usage data into actionable insights.",
+        name: "Aaroh Nanoti",
+        role: "Backend Developer",
+        bio: "Something backend",
       },
       {
-        name: "Sophie Williams",
-        role: "Backend Engineer",
-        bio: "Creates robust API architecture and scalable cloud infrastructure.",
+        name: "Karthik Yammanur",
+        role: "AI Developer",
+        bio: "Some AI",
+      },
+      {
+        name: "Shaheem",
+        role: "AI Developer",
+        bio: "Some AI",
       },
     ];
   

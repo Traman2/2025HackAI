@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { ArrowRight, Battery, Zap, BarChart3 } from "lucide-react";
+import { Battery, Zap, BarChart3 } from "lucide-react";
 
 function FeaturesSection() {
   return (
@@ -125,15 +125,7 @@ function FeatureCard({
       </motion.div>
       <h3 className="mt-6 text-xl font-bold text-gray-900">{title}</h3>
       <p className="mt-4 text-base text-gray-600 max-w-md">{description}</p>
-      <motion.a
-        whileHover={{ scale: 1.05 }}
-        whileTap={{ scale: 0.95 }}
-        href="#"
-        className="mt-6 inline-flex items-center text-green-600 font-medium"
-      >
-        Learn more
-        <ArrowRight className="ml-2 h-4 w-4" />
-      </motion.a>
+      
     </motion.div>
   );
 }
