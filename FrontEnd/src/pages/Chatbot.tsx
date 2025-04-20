@@ -1,7 +1,7 @@
 import { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Send, Upload, Bot, User } from 'lucide-react';
-
+import Navbar from '../components/Landing/NavBar';
 interface Message {
   role: 'user' | 'assistant';
   content: string;
@@ -60,6 +60,8 @@ function AIChatbot() {
   };
 
   return (
+    <>
+    <Navbar/>
     <div className="min-h-screen bg-gradient-to-br from-green-50 to-green-100 p-4">
       <div className="max-w-4xl mx-auto">
         <motion.div
@@ -163,6 +165,8 @@ function AIChatbot() {
         )}
       </div>
     </div>
+    </>
+    
   );
 }
 

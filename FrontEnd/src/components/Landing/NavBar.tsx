@@ -15,6 +15,7 @@ function Navbar() {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ duration: 0.5 }}
                 className="flex items-center"
+                onClick={() => navigate("/")}
               >
                 <Zap className="h-8 w-8 text-green-600" />
                 <span className="ml-2 text-xl font-bold text-gray-900">
