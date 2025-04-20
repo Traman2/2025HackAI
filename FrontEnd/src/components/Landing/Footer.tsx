@@ -53,7 +53,7 @@ function Footer() {
             <ul className="mt-4 space-y-2">
               <li>
                 <a
-                  href="#about"
+                  href="/about"
                   className="text-gray-400 hover:text-green-400 transition"
                 >
                   About

@@ -1,5 +1,6 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Landing from './pages/Landing'
+import AboutPage from './pages/About'
 function App() {
 
   return (
@@ -7,6 +8,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Landing/>}/>
+        <Route path="/about" element={<AboutPage/>}/>
       </Routes>
     </Router>
       
